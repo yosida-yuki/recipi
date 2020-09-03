@@ -1,4 +1,4 @@
-class RecipisController < ApplicationController
+class RecipesController < ApplicationController
   def index
   end
 
