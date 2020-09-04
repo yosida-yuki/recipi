@@ -23,7 +23,10 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
-
+   database: recipi_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
 
 
 
@@ -34,9 +37,3 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-production:
-  <<: *default
-  database: chat-space_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
