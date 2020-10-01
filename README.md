@@ -1,24 +1,24 @@
-# README
+アプリ名(レシピTO)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+概要 ユーザー同士でレシピを共有できるアプリ
 
-Things you may want to cover:
+本番環境（heroku, テストアカウント　adminn )
 
-* Ruby version
+制作意図 　塩パンを流行させた、パン屋さんが繁盛の理由は積極的に レシピを公開した事と知りその様な取組の手助けを出来る様に考えました。
 
-* System dependencies
+adress https://github.com/yosida-yuki/recipi
 
-* Configuration
+DEMO
 
-* Database creation
+demo
 
-* Database initialization
+工夫したポイント
 
-* How to run the test suite
+自分が投稿したレシピを他のユーザーが編集できない様にした。
 
-* Services (job queues, cache servers, search engines, etc.)
+使用技術（ruby on rails VS code my sql heloku)
 
-* Deployment instructions
+・課題や今後実装したい機能 jsを用いたアニメーション
 
-* ...
+・DB設計 db
+![画像名](https://github.com/yosida-yuki/pict/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-28%2021.03.57.png)
