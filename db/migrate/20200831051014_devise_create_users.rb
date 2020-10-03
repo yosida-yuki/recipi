@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
@@ -32,9 +30,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      t.string  :username
-      t.text    :profile
-      t.string  :profile_image_id
+      t.string :username
+      t.string :profile_image_id
       t.timestamps null: false
     end
 

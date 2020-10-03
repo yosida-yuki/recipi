@@ -4,8 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
-
+gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
+# Use sqlite3 as the database for Active Record
+#em 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -36,11 +37,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-# Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-  gem 'mysql2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3'
 end
 
 group :development do
@@ -62,12 +61,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
-
-
 
 group :production do
   gem 'pg'
